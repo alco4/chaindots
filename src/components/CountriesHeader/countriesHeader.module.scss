@@ -1,13 +1,16 @@
+@import "../../variables.scss";
+
 .countriesHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 80px;
   width: 100%;
-  background-color: #ffffff;
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  background-color: $background-color-secondary;
+  -webkit-transition: $background-color-transition;
+  -ms-transition: $background-color-transition;
+  transition: $background-color-transition;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
 }
 
 .countriesPageTitle {
@@ -32,8 +35,8 @@
 }
 
 .darkModeTheme {
-  background-color: #2b3945;
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  background-color: $background-color-dark-secondary;
+  -webkit-transition: $background-color-transition;
+  -ms-transition: $background-color-transition;
+  transition: $background-color-transition;
 }

@@ -1,29 +1,31 @@
+@import "../../variables.scss";
+
 .cardListToolsBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
   margin-bottom: 50px;
-  background-color: #f0f0f0;
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  background-color: $background-color-primary;
+  -webkit-transition: $background-color-transition;
+  -ms-transition: $background-color-transition;
+  transition: $background-color-transition;
 }
 
 .darkModeTheme {
-  color: #ffffff;
-  background-color: #202c37;
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  color: $text-color-primary-dark;
+  background-color: $background-color-dark-primary;
+  -webkit-transition: $background-color-transition;
+  -ms-transition: $background-color-transition;
+  transition: $background-color-transition;
 
   .searchBox {
-    background-color: #2b3945;
+    background-color: $background-color-dark-secondary;
   }
 
   .searchInput {
-    background-color: #2b3945;
-    color: #ffffff;
+    background-color: $background-color-dark-secondary;
+    color: $text-color-primary-dark;
   }
 
   .searchIcon {
@@ -46,7 +48,7 @@
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 12px 24px;
-  background-color: #ffffff;
+  background-color: $background-color-secondary;
   &:hover {
     cursor: pointer !important;
   }

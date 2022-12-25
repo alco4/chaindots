@@ -1,10 +1,12 @@
+@import "../../variables.scss";
+
 .card {
   position: relative;
   display: flex;
   flex-direction: column;
   border-radius: 2px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background: #f8fafc;
+  background: #f9f9f9;
   padding-bottom: 40px;
   &:hover {
     cursor: pointer;
@@ -13,10 +15,10 @@
 }
 
 .darkModeTheme {
-  background: #2b3945;
-  color: #ffffff;
+  background: $background-color-dark-secondary;
+  color: $text-color-primary-dark;
   .cardTitle {
-    color: #ffffff;
+    color: $text-color-primary-dark;
   }
 }
 

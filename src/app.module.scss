@@ -1,20 +1,21 @@
+@import "./variables.scss";
+
 .mainContainer {
-  width: 100vw;
   height: 100vh;
-  background-color: #f0f0f0;
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  background-color: $background-color-primary;
+  -webkit-transition: $background-color-transition;
+  -ms-transition: $background-color-transition;
+  transition: $background-color-transition;
 }
 
 .darkModeTheme {
-  background-color: #202c37;
-  color: #ffffff;
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  background-color: $background-color-dark-primary;
+  color: $text-color-primary-dark;
+  -webkit-transition: $background-color-transition;
+  -ms-transition: $background-color-transition;
+  transition: $background-color-transition;
 
   h2 {
-    color: #ffffff;
+    color: $text-color-primary-dark;
   }
 }

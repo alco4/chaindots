@@ -26,6 +26,7 @@ const CardListToolsBar: React.FC<CardListToolsBarType> = ({
       backgroundColor: darkMode ? "#2B3945" : "#FFFFFF",
       color: "#FFFFFF !important",
       border: state.isFocused ? 0 : 0,
+      borderRadius: "3px",
       padding: "4px",
       boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
       "&:hover": {
@@ -66,7 +67,7 @@ const CardListToolsBar: React.FC<CardListToolsBarType> = ({
           onChange={handleSelectFilter}
           theme={(theme: any) => ({
             ...theme,
-            borderRadius: 0,
+            borderRadius: "3px",
             colors: {
               ...theme.colors,
               neutral80: darkMode ? "#FFFFFF" : "black",
