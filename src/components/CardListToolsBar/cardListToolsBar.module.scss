@@ -1,0 +1,78 @@
+.cardListToolsBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 50px;
+  background-color: #f0f0f0;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+
+.darkModeTheme {
+  color: #ffffff;
+  background-color: #202c37;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+
+  .searchBox {
+    background-color: #2b3945;
+  }
+
+  .searchInput {
+    background-color: #2b3945;
+    color: #ffffff;
+  }
+
+  .searchIcon {
+    filter: brightness(0) invert(1);
+  }
+}
+
+@media (max-width: 800px) {
+  .cardListToolsBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  &:hover {
+    cursor: pointer !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .searchBox {
+    margin-bottom: 20px;
+  }
+}
+
+.selectBox {
+  width: 200px;
+}
+
+.searchIcon {
+  width: 16px;
+}
+.searchInput {
+  font-size: 16px;
+  margin-left: 10px;
+  border: 0;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer !important;
+  }
+}

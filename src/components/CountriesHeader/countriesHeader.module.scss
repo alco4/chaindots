@@ -1,0 +1,39 @@
+.countriesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background-color: #ffffff;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+
+.countriesPageTitle {
+  font-size: 15px;
+  margin-left: 100px;
+}
+
+.darkMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  &:hover {
+    cursor: pointer !important;
+    scale: 1.1;
+  }
+}
+
+.darkModeIcon {
+  width: 15px;
+  margin-right: 4px;
+}
+
+.darkModeTheme {
+  background-color: #2b3945;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}

@@ -1,0 +1,20 @@
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f0;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+
+.darkModeTheme {
+  background-color: #202c37;
+  color: #ffffff;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+
+  h2 {
+    color: #ffffff;
+  }
+}
