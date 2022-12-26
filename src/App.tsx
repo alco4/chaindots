@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { CountriesList, CountryDetail } from "./pages";
 import { CountriesHeader } from "./components";
-import styles from "./App.module.scss";
+import styles from "./app.module.scss";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
