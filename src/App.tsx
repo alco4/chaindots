@@ -16,7 +16,7 @@ function App() {
         darkMode={darkMode}
       />
       <Routes>
-        <Route path="/" element={<CountriesList darkMode={darkMode} />} />
+        <Route path="/*" element={<CountriesList darkMode={darkMode} />} />
         <Route
           path="/country/:countryName"
           element={<CountryDetail />}
