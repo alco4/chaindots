@@ -10,7 +10,7 @@ interface CardType {
 const Card: React.FC<CardType> = ({ img, title, descriptionItems, darkMode }) => {
   return (
     <Link
-      to={`/country/${title}`}
+      to={`/country/${title.replace(" ", "%20")}`}
       style={{ textDecoration: "none !important", color: "black" }}
     >
       <div className={`${styles.card} ${darkMode && styles.darkModeTheme}`}>
